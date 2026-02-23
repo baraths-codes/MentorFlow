@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
-  LayoutDashboard, Map, CheckSquare, BarChart3, Settings, Menu, X, Zap,
+  LayoutDashboard, Map, CheckSquare, BarChart3, Settings, Menu, X, Zap, MessageCircle,
 } from "lucide-react";
 
 const navItems = [
@@ -9,6 +9,7 @@ const navItems = [
   { title: "Roadmap", path: "/roadmap", icon: Map },
   { title: "Tasks", path: "/tasks", icon: CheckSquare },
   { title: "Skill Analysis", path: "/skills", icon: BarChart3 },
+  { title: "AI Mentor", path: "/mentor", icon: MessageCircle },
   { title: "Settings", path: "/settings", icon: Settings },
 ];
 

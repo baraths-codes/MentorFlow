@@ -12,6 +12,7 @@ import Roadmap from "./pages/Roadmap";
 import Tasks from "./pages/Tasks";
 import SkillAnalysis from "./pages/SkillAnalysis";
 import SettingsPage from "./pages/Settings";
+import Mentor from "./pages/Mentor";
 import AppLayout from "./components/AppLayout";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ function AppRoutes() {
       <Route path="/roadmap" element={<AppLayout><Roadmap /></AppLayout>} />
       <Route path="/tasks" element={<AppLayout><Tasks /></AppLayout>} />
       <Route path="/skills" element={<AppLayout><SkillAnalysis /></AppLayout>} />
+      <Route path="/mentor" element={<AppLayout><Mentor /></AppLayout>} />
       <Route path="/settings" element={<AppLayout><SettingsPage /></AppLayout>} />
       <Route path="*" element={<NotFound />} />
     </Routes>
