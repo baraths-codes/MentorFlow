@@ -13,21 +13,16 @@ serve(async (req) => {
     const GROQ_API_KEY = Deno.env.get("GROQ_API_KEY");
     if (!GROQ_API_KEY) throw new Error("GROQ_API_KEY is not configured");
 
-    const systemPrompt = `You are MentorFlow AI, a focused career mentor assistant. You help users with their career development journey.
+    const systemPrompt = `You are a structured AI career mentor. Give clear, practical steps. No generic advice.
 
 ${profile ? `The user's profile:
 - Name: ${profile.name}
 - Career Goal: ${profile.careerGoal}
 - Skill Level: ${profile.skillLevel}
 - Existing Skills: ${profile.existingSkills?.join(", ") || "None listed"}
-- Target Timeline: ${profile.targetTimeline}` : "No profile available yet."}
+- Target Timeline: ${profile.targetTimeline}` : ""}
 
-Guidelines:
-- Keep responses concise and actionable (2-4 paragraphs max)
-- Focus on career advice, skill development, and learning strategies
-- When suggesting tasks, format them clearly so they can be added to the user's plan
-- Be encouraging but realistic
-- Use markdown formatting for clarity`;
+Use markdown formatting for clarity.`;
 
     const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
       method: "POST",
@@ -36,7 +31,7 @@ Guidelines:
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "llama-3.3-70b-versatile",
+        model: "llama3-8b-8192",
         messages: [
           { role: "system", content: systemPrompt },
           ...messages,
