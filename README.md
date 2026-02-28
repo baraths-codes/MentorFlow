@@ -1,30 +1,105 @@
-# Welcome to your Lovable project
+# voidSeek  
+### Closed-Loop Career Execution System
 
-## Project info
+---
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🌐 Live Demo
 
-## How can I edit this code?
+🔗 Public Prototype URL:  
+👉 https://mentor-flow-web.lovable.app
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 🚀 Overview
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+voidSeek is an AI-powered Career Execution Architecture that transforms abstract career goals into structured, measurable, and industry-aligned execution plans.
 
-Changes made via Lovable will be committed automatically to this repo.
+Instead of providing one-time advice, voidSeek creates a continuous mentorship loop that plans, tracks, adapts, and synchronizes student progress in real time.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🎯 Problem Statement
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Students have access to abundant information but lack a structured execution system to convert career goals into measurable, industry-aligned progress — resulting in fragmented learning and underprepared graduates.
 
-Follow these steps:
+---
+
+## 💡 Our Solution
+
+voidSeek introduces a **Closed-Loop Career Execution Model**:
+
+1. **Goal Structuring Engine**  
+   Converts career ambitions into phased, measurable pathways.
+
+2. **Daily Execution Layer**  
+   Breaks long-term goals into actionable, trackable micro-tasks.
+
+3. **Adaptive Intelligence**  
+   Continuously updates roadmaps based on performance and skill gaps.
+
+4. **Industry Alignment**  
+   Skill paths dynamically reflect real hiring demands and market trends.
+
+---
+
+## 🏗 Architecture Overview
+
+The system follows a layered architecture:
+
+- **User Layer** – Student Dashboard & Input Hub  
+- **Orchestration Layer** – Career Execution Engine  
+  (Intent parsing, skill gap analysis, task planning)  
+- **Intelligence Layer** – LLM-based inference + Vector Database  
+- **Action Layer** – API integrations (Notion, Google Calendar, Google Keep)  
+- **Database Layer** – Student progress, execution logs, industry trends  
+
+This creates a continuous planning → execution → feedback loop.
+
+---
+
+## ⚙️ Tech Stack
+
+- Frontend: React (Lovable Prototype)
+- Backend: API-driven architecture
+- AI Layer: LLM-based inference
+- Memory: Vector database
+- Integrations: Notion API, Google Calendar API
+- Deployment: Cloud-compatible, Edge-ready design
+
+---
+
+## 🧠 AMD Alignment
+
+voidSeek is architected to leverage AMD-powered environments:
+
+- **AMD Ryzen™** – Multi-core orchestration for real-time task processing  
+- **AMD Ryzen™ AI** – Designed for lightweight edge inference workloads  
+- **AMD ROCm™ Compatibility** – Supports scalable GPU-accelerated AI workloads  
+
+---
+
+## 📈 Impact
+
+- Enables structured, continuous mentorship
+- Reduces decision paralysis
+- Aligns learning with industry demand
+- Scalable across institutions
+
+---
+
+## 🔮 Future Scope
+
+- University placement integration
+- Enterprise hiring ecosystem connectivity
+- Edge-deployable local AI models
+- National-level career intelligence infrastructure
+
+---
+
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/baraths-codes/MentorFlow.git
 
 # Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
@@ -36,20 +111,8 @@ npm i
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
+*
 ## What technologies are used for this project?
 
 This project is built with:
@@ -60,14 +123,3 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
